@@ -67,6 +67,10 @@
 	<filter>
 		<filter-name>flow2</filter-name>
 		<filter-class>com.servlet.test.FlowFilterTwo</filter-class>
+		<init-param>
+			<param-name>en</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
 	</filter>
 
 	<filter-mapping>

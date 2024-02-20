@@ -10,7 +10,8 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 public class FlowFilterTwo implements Filter{
-
+	String charset;
+	
 	@Override
 	public void destroy() {
 		System.out.println("destroy()호출 ...... two");
@@ -19,7 +20,8 @@ public class FlowFilterTwo implements Filter{
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		request.setCharacterEncoding("UTF-8");
+		//request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding(charset);
 		
 		System.out.println("doFilter 호출 전 ...... two");
 		chain.doFilter(request, response);
@@ -29,6 +31,7 @@ public class FlowFilterTwo implements Filter{
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
 		System.out.println("init() 호출 ...... two");
+		charset = filterConfig.getInitParameter("en");
 	}
 
 }
