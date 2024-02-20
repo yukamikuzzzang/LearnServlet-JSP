@@ -88,7 +88,7 @@
 		<listener-class>com.servlet.test.TestSessionAttributeListener</listener-class>
 	</listener> -->
 
-	<listener>
+	<!-- <listener>
 		<listener-class>com.servlet.test.TestServletContextListener</listener-class>
-	</listener>
+	</listener> -->
 </web-app>
