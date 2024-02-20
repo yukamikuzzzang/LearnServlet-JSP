@@ -77,7 +77,7 @@
  -->
 
 	<listener>
-		<listener-class>com.servlet.Test.TestRequestListener</listener-class>
+		<listener-class>com.servlet.test.TestRequestListener</listener-class>
 	</listener>
 
 </web-app>
