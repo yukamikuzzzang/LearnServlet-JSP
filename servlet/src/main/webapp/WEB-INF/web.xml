@@ -80,12 +80,15 @@
 		<listener-class>com.servlet.test.TestRequestListener</listener-class>
 	</listener> -->
 	
-	<listener>
+	<!-- <listener>
 		<listener-class>com.servlet.test.TestSessionListener</listener-class>
 	</listener>
 	
 	<listener>
 		<listener-class>com.servlet.test.TestSessionAttributeListener</listener-class>
-	</listener>
+	</listener> -->
 
+	<listener>
+		<listener-class>com.servlet.test.TestServletContextListener</listener-class>
+	</listener>
 </web-app>
