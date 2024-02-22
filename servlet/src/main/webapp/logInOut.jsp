@@ -17,6 +17,6 @@
 		PW : <input type="password" name="pwd"><br>
 		<input type="submit" value="로그인">
 	</form>
-	<!-- <p>	<a href="logProc">로그아웃</a> -->
+	<a href="example10.jsp">로그아웃</a>
 </body>
 </html>
