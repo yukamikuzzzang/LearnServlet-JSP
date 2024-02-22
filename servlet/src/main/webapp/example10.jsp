@@ -19,9 +19,18 @@
 			rd.forward(request, response);
 			return;
 	}
+		
+	//로그인처리
+	if(session.isNew() || session.getAttribute("id") == null){
+		session.setAttribute("id", id);
+		out.print("로그인 작업이 완료되었습니다.");
+	} else {
+		out.print("이미 로그인 상태입니다.");
+	}
 	%>
 
-
+	
+	
 	<%=id%>
 	/
 	<%=pwd%>
