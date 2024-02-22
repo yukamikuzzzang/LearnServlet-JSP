@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-All Contents Copyright(c) 2017 Ruby Paper Co., LTD
+All Contents Copyright(c) 2017 Ruby Paper Co. ,LTD
 </body>
 </html>
