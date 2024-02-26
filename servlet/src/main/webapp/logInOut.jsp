@@ -12,6 +12,9 @@
 		<%
 			String msg = (String) request.getAttribute("error");
 			if (msg == null)
+				
+				
+				
 				msg = "";
 		%>
 		<%= msg %>
