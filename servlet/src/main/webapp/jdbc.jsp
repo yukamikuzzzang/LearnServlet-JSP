@@ -10,7 +10,10 @@
 	//3. Statement OR PreparedStatement 객체 생성하기
 	Statement stmt = conn.createStatement();
 	//4. SQL 실행
-	stmt.executeUpdate("create table test(id varchar2(5),pwd varchar2(5))");
+	//stmt.executeUpdate("create table test(id varchar2(5),pwd varchar2(5))");
+	stmt.executeUpdate("insert into test values('aa','11')");
+	stmt.executeUpdate("insert into test values('bb','22')");
+	stmt.executeUpdate("insert into test values('cc','33')");
 	//5. 자원해제
 	stmt.close();
 	conn.close(); //연결 해제
