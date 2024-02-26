@@ -21,6 +21,7 @@
 		out.print("<br>"+rs.getString("id")+":"+rs.getString(2)); 
 	}
 	//5. 자원해제
+	rs.close();
 	stmt.close();
 	conn.close(); //연결 해제
 %>
