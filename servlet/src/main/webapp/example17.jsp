@@ -12,8 +12,8 @@
 	<jsp:getProperty property="name" name="hello"/>
 	<jsp:getProperty property="number" name="hello"/>
 	
-	<%-- <jsp:setProperty property="name" name="hello" value="a"/>
-	<jsp:setProperty property="number" name="hello" value="b"/> --%>
+	<%-- <jsp:setProperty property="name" name="hello" value="Amy"/>
+	<jsp:setProperty property="number" name="hello" value="12345"/> --%>
 	<jsp:setProperty property="*" name="hello"/>
 	<hr>
 	
