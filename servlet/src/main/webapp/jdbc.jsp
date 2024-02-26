@@ -9,6 +9,16 @@
 	Connection conn = DriverManager.getConnection(url,"scott","tiger");
 	//3. Statement OR PreparedStatement 객체 생성하기
 	Statement stmt = conn.createStatement();
+	
+	String id = request.getParameter("id");
+	String pwd = request.getParameter("pwd");
+	
+	PreparedStatement pstmt = conn.prepareStatement("insert into test values(?,?)");
+	pstmt.setString(1, id);
+	pstmt.setString(2, pwd);
+	pstmt.executeUpdate();
+	
+	
 	//4. SQL 실행
 	//stmt.executeUpdate("create table test(id varchar2(5),pwd varchar2(5))");
 	/* stmt.executeUpdate("insert into test values('aa','11')");
