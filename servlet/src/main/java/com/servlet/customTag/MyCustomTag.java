@@ -8,7 +8,8 @@ public class MyCustomTag extends TagSupport {
 	public int doStartTag() throws JspException {
 		System.out.println("시작태그를 만났습니다.");
 		//return super.doStartTag();
-		return EVAL_BODY_INCLUDE;
+		//return EVAL_BODY_INCLUDE;
+		return SKIP_BODY;
 	}
 
 	@Override
