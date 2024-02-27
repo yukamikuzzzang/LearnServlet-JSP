@@ -9,6 +9,7 @@
 <title>Custom Tag</title>
 </head>
 <body>
-<my:first></my:first>
+<%-- <my:first></my:first> --%>
+<my:first/>
 </body>
 </html>
