@@ -10,9 +10,10 @@
 </head>
 <body>
 <my:first color="blue"><%= 1+2 %></my:first> 
-<%-- <%= 3+3 %>
-<my:first><%= 5+10 %><%= 4+17 %></my:first> --%>
-<%-- <my:first/> --%>
+<!-- 
+	isValid() 에서 false가 나오면 서버 자체에서 에러화면을 출력한다.
+ -->
+
 Custom Tag Test!
 
 </body>
