@@ -14,8 +14,11 @@
 	<jsp:useBean id="book" class="com.servlet.beans.BookBean"></jsp:useBean>
 	<jsp:setProperty property="*" name="book" />
 
-	<%
+	<%-- <%
 		request.setAttribute("book", book);
+	%> --%>
+	<%
+		session.setAttribute("book", book);
 	%>
 
 	 <jsp:forward page="bookOutput.jsp"/> 
