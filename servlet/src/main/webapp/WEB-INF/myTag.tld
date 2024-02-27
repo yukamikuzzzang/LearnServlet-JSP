@@ -7,6 +7,7 @@
 	<tag>
 		<name>first</name>
 		<tag-class>com.servlet.customTag.MyCustomTag</tag-class>
+		<tei-class>com.servlet.customTag.MyCustomTagTEI</tei-class>
 		<body-content>JSP</body-content>
 		<attribute>
 			<name>color</name>
