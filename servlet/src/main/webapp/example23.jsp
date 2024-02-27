@@ -13,6 +13,7 @@
 <%-- <%= 3+3 %>
 <my:first><%= 5+10 %><%= 4+17 %></my:first> --%>
 <%-- <my:first/> --%>
+Custom Tag Test!
 
 </body>
 </html>

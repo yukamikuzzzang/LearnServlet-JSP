@@ -19,17 +19,16 @@ public class MyCustomTag extends TagSupport {
 	@Override
 	public int doAfterBody() throws JspException {
 		System.out.println("body 처리가 끝났습니다. : "+cnt);
-		if(cnt++<10)
-			return EVAL_BODY_AGAIN;
-		else
-			return SKIP_BODY;
+		return SKIP_BODY;
 		//return super.doAfterBody();
 	}
 	
 	@Override
 	public int doEndTag() throws JspException {
 		System.out.println("끝태그를 만났습니다.");
-		return super.doEndTag();
+		//return super.doEndTag();
+		//return EVAL_PAGE;
+		return SKIP_PAGE;
 	}
 
 }
