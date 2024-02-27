@@ -92,6 +92,14 @@
 		<listener-class>com.servlet.test.TestServletContextListener</listener-class>
 	</listener> -->
 	
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://myTags.com</taglib-uri>
+			<taglib-location>/WEB-INF/myTag.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+	   
+	
 	<resource-ref>
 		<description>Oracle DataSource example</description>
 		<res-ref-name>jdbc/myoracle</res-ref-name>
