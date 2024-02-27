@@ -9,7 +9,7 @@
 <title>Custom Tag</title>
 </head>
 <body>
-<my:first><%= 1+2 %></my:first> 
+<my:first color="red"><%= 1+2 %></my:first> 
 <%-- <%= 3+3 %>
 <my:first><%= 5+10 %><%= 4+17 %></my:first> --%>
 <%-- <my:first/> --%>
