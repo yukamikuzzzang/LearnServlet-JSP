@@ -11,5 +11,10 @@
 	책저자: ${book.author}<br>
 	출판사: ${book.publisher}<br>
 	
+	<%--
+		 ${book. ~ } 
+		request > session > application 객체 순으로 getAttribute("칼럼명")을 시전한다.
+	--%>
+	
 </body>
 </html>
