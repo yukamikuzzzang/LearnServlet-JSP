@@ -5,7 +5,7 @@
 	//1. jdbc Driver 로딩하기
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	//2. DB 서버 접속하기
-	String url = "jdbc:oracle:thin:@ 192.168.50.109:1521:xe";
+	String url = "jdbc:oracle:thin:@ localhost:1521:xe";
 	Connection conn = DriverManager.getConnection(url,"scott","tiger");
 	//3. Statement OR PreparedStatement 객체 생성하기
 	Statement stmt = conn.createStatement();
