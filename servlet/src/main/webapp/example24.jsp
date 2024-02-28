@@ -9,7 +9,8 @@
 </head>
 <body>
 	<my2:second>hello~</my2:second><br>
-	<my2:third>hello~</my2:third>
+	<my2:third>hello~</my2:third><br>
+	<my2:fourth num2="10" num1="20"/>
 	<br>Custom Tag Test!
 </body>
 </html>
