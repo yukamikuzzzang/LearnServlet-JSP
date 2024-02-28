@@ -12,5 +12,11 @@
 		<tag-class>com.servlet.customTag.MyCustomTag2</tag-class>
 		<body-content>scriptless</body-content>
 	</tag>
+	
+	<tag>
+		<name>third</name>
+		<tag-class>com.servlet.customTag.MyCustomTag3</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
 </taglib>
   
