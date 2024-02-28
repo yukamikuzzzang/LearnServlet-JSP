@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
+	<%-- <%
 		String p = request.getParameter("p");
 	%>
-	<jsp:forward page="<%=p %>"/>
+	<jsp:forward page="<%=p %>"/> --%>
+	<jsp:forward page="${param.p}"/>
 </body>
 </html>
