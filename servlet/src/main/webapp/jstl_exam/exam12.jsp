@@ -9,7 +9,7 @@
 <fmt:formatNumber type="number" maxFractionDigits="20" value="${balance}" /><br>
 <fmt:formatNumber type="number" groupingUsed="false" value="${balance}" /><br>
 <fmt:formatNumber type="percent" maxIntegerDigits="3" value="${balance}" /><br>
-<fmt:formatNumber type="percent" maxFractionDigits="1" value="${balance}" /><br> <%-- 적용여부에 대한 확인 필요 --%>
+<fmt:formatNumber type="percent" minFractionDigits="10" value="${balance}" /><br> 
 <fmt:formatNumber type="percent" maxIntegerDigits="3" value="${balance}"/><br>
 <fmt:formatNumber type="number" pattern="###.###E0" value="${balance }"/><br>
 
