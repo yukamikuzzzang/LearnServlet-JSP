@@ -9,6 +9,11 @@
 	user="scott"
 	password="tiger" />
 	
+	<%--
+		deptno 10 ACCOUNTING NEW YORK > LOS ANGELES
+		deptno 20 RESEARCH DALLAS > HOUSTON
+		(new) deptno 50
+	 --%>
 <sql:transaction dataSource="${myoracle2}">
 	<sql:update>
 		update dept set loc='LOS ANGELES' where deptno=10
