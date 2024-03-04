@@ -2,8 +2,15 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 
+ 
+<sql:update dataSource="jdbc/myoracle">
+update test set pwd=? where id=?
+	<sql:param value="${'555'}" />
+	<sql:param value="${'aa'}" />
+</sql:update>
+
 <sql:query var="rs" dataSource="jdbc/myoracle">
-select * from test
+select * from test order by id
 </sql:query>
 	<table>
 		<tr>
