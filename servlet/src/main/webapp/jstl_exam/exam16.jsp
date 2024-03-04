@@ -9,6 +9,19 @@
 	user="scott"
 	password="tiger" />
 	
+<sql:transaction dataSource="${myoracle2}">
+	<sql:update>
+		update dept set loc='LOS ANGELES' where deptno=10
+	</sql:update>
+	<sql:update>
+		update dept set loc='HOUSTON' where deptno=20
+	</sql:update>
+	<sql:update>
+		insert into dept values(50,'MARKETING','SEATTLE')
+	</sql:update>
+</sql:transaction>
+	
+	
 <sql:query dataSource="${myoracle2}" var="result">
 select * from dept
 </sql:query>
